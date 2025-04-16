@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.calc{
+    position: relative;
+    background: black;
+    border-radius: 10px;
+    width: 380px;
+    padding: 15px;
+}
+.calc .settings{
+    border: none;
+    outline: none;
+    text-align: center;
+    background: rgb(41, 40, 40);
+    color: #ffa500;
+    width: 80%;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.calc .settings i{
+    font-size: 20px;
+}
+.calc .row1:hover .dropdown{
+    display: block;
+}
+.dropdown{
+    position: absolute;
+    display: none;
+    width: 250px;
+    background: rgba(255, 68, 0, 0.651);
+    height: 171px;
+}
+.dropdown li{
+    padding: 7px;
+    text-align: center;
+    border: 1px solid white;
+}
+.dropdown li a{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown li:hover{
+    background: orangered;
+}
+.row1{
+    width: 15%;
+}
+table{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+table tr td{
+    width: 80px;
+    padding: 10px;
+}
+table tr td input{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(201, 197, 197);
+}
+table tr td button{
+    border: none;
+    outline: none;
+    text-align: center;
+    background: rgb(41, 40, 40);
+    color: whitesmoke;
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.delete img{
+    width: 30px;
+    line-height: 100px;
+}
+.equal{
+    background: royalblue;
+    color: whitesmoke;
+}
+.symbol{
+    color: #ffa500;
+}
+
+@media(max-width:450px){
+    .calc{
+        width: 250px;
+        padding: 10px;
+    }
+    .calc .settings{
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .dropdown{
+        width: 150px;
+        height: 135px;
+    }
+    .dropdown li a{
+        font-size: 10px;
+        padding: 7px;
+    }
+    table tr td input{
+        padding: 8px;
+        font-size: 12px;
+    }
+    table tr td{
+        width: 40px;
+    }
+    table tr td button{
+        width: 80%;
+        height: 25px;
+        font-size: 12px;
+    }
+    .delete img{
+        width: 15px;
+    }
+}
