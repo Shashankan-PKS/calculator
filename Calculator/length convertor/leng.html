@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5008f">
+    <title>Length Convertor</title>
+    <link rel="stylesheet" href="leng.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lengconverter">
+            <div class="row1">
+                <div class="btn">
+                    <button class="settings" onclick=""><i class="fa fa-bars"></i></button>               
+                    <ul class="dropdown">
+                        <li><a href="../index.html">Calculator</a></li>
+                        <li><a href="../temperature converter/temp.html">Temperature Convertor</a></li>
+                        <li><a href="#">Length converter</a></li>
+                        <li><a href="../speed converter/speed.html">Speed converter</a></li>
+                    </ul>
+                </div>
+                <p>Length converter</p>
+            </div>
+            <div class="input">
+                <div class="in1">
+                    <select class="type1" id="type1">
+                        <option value="">Select unit</option>
+                        <option value="meter">Meter</option>
+                        <option value="cm">Centimeter</option>
+                        <option value="mm">Millimeter</option>
+                        <option value="km">Kilometer</option>
+                        <option value="mile">Mile</option>
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                    </select>
+                    <div class="in1data">
+                        <input type="number" id="inputvalue" placeholder="0">
+                    </div>
+                </div>
+                <div class="in2">
+                    <select class="type2" id="type2">
+                        <option value="">Select unit</option>
+                        <option value="meter">Meter</option>
+                        <option value="cm">Centimeter</option>
+                        <option value="mm">Millimeter</option>
+                        <option value="km">Kilometer</option>
+                        <option value="mile">Mile</option>
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                    </select>
+                    <div class="in2data" id="results">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class= "convert">
+                <button onclick="length()">Convert</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
+    <script src="leng.js"></script>
+</body>
+</html>

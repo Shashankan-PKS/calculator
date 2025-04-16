@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0000ff">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="temp.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="tempconverter"> 
+            <div class="row1">
+                <div class="btn">
+                    <button class="settings" onclick=""><i class="fa fa-bars"></i></button>               
+                    <ul class="dropdown">
+                        <li><a href="../index.html">Calculator</a></li>
+                        <li><a href="#">Temperature converter</a></li>
+                        <li><a href="../length convertor/leng.html">Length converter</a></li>
+                        <li><a href="../speed converter/speed.html">Speed converter</a></li>
+                    </ul>
+                </div>
+                <p>temperature converter</p>
+            </div>
+            
+            <div class="input">
+                <div>
+                    <input type="number" id="inputvalue" placeholder="Degree (&deg;C)">
+                </div>
+                <div class="unit">
+                    <select name="type" id="type">
+                        <option value="">Select Degree</option>
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankin">Rankin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="convert">
+                <button type="submit" onclick="temperature()">Convert</button>
+            </div>
+            <div class="results">
+                <label for="result">Result </label>
+                <div id="result">
+                    <!--<input type="number" id="output">-->
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
+    <script src="temp.js"></script>
+</body>
+</html>
